@@ -1,0 +1,464 @@
+{
+  "env": "HomoNcomIndePOIntrxMASS3CTWN3-v0",
+  "log_level": "DEBUG",
+  "multiagent": {
+    "policy_graphs": {
+      "car1": [
+        "<class 'ray.rllib.agents.ppo.ppo_policy_graph.PPOPolicyGraph'>",
+        "Box(84, 84, 3)",
+        "Discrete(9)",
+        {
+          "env_config": {
+            "actors": {
+              "car1": {
+                "auto_control": false,
+                "camera_type": "rgb",
+                "collision_sensor": "on",
+                "convert_images_to_video": false,
+                "early_terminate_on_collision": true,
+                "enable_planner": true,
+                "lane_sensor": "on",
+                "log_images": false,
+                "log_measurements": false,
+                "manual_control": false,
+                "render": true,
+                "reward_function": "corl2017",
+                "scenarios": "SSUI3C_TOWN3_CAR1",
+                "send_measurements": false,
+                "type": "vehicle_4W",
+                "use_depth_camera": false,
+                "x_res": 84,
+                "y_res": 84
+              },
+              "car2": {
+                "auto_control": false,
+                "camera_type": "rgb",
+                "collision_sensor": "on",
+                "convert_images_to_video": false,
+                "early_terminate_on_collision": true,
+                "enable_planner": true,
+                "lane_sensor": "on",
+                "log_images": false,
+                "log_measurements": false,
+                "manual_control": false,
+                "render": true,
+                "reward_function": "corl2017",
+                "scenarios": "SSUI3C_TOWN3_CAR2",
+                "send_measurements": false,
+                "type": "vehicle_4W",
+                "use_depth_camera": false,
+                "x_res": 84,
+                "y_res": 84
+              },
+              "car3": {
+                "auto_control": false,
+                "camera_type": "rgb",
+                "collision_sensor": "on",
+                "convert_images_to_video": false,
+                "early_terminate_on_collision": true,
+                "enable_planner": true,
+                "lane_sensor": "on",
+                "log_images": false,
+                "log_measurements": false,
+                "manual_control": false,
+                "render": true,
+                "reward_function": "corl2017",
+                "scenarios": "SSUI3C_TOWN3_CAR3",
+                "send_measurements": false,
+                "type": "vehicle_4W",
+                "use_depth_camera": false,
+                "x_res": 84,
+                "y_res": 84
+              }
+            },
+            "env": {
+              "discrete_actions": true,
+              "enable_planner": true,
+              "fixed_delta_seconds": 0.05,
+              "framestack": 1,
+              "render": true,
+              "render_x_res": 800,
+              "render_y_res": 600,
+              "send_measurements": false,
+              "server_map": "/Game/Carla/Maps/Town03",
+              "spectator_loc": [
+                140,
+                68,
+                9
+              ],
+              "squash_action_logits": false,
+              "sync_server": true,
+              "use_depth_camera": false,
+              "verbose": false,
+              "x_res": 84,
+              "y_res": 84
+            },
+            "scenarios": {
+              "actors": {
+                "car1": {
+                  "end": [
+                    144,
+                    59,
+                    0
+                  ],
+                  "start": [
+                    170.5,
+                    80,
+                    0.4
+                  ]
+                },
+                "car2": {
+                  "end": [
+                    167,
+                    75.7,
+                    0.13
+                  ],
+                  "start": [
+                    188,
+                    59,
+                    0.4
+                  ]
+                },
+                "car3": {
+                  "end": [
+                    191.2,
+                    62.7,
+                    0
+                  ],
+                  "start": [
+                    147.6,
+                    62.6,
+                    0.4
+                  ]
+                }
+              },
+              "map": "Town03",
+              "max_steps": 500,
+              "weather_distribution": [
+                0
+              ]
+            }
+          },
+          "model": {
+            "custom_model": "mnih15_shared_weights",
+            "custom_options": {
+              "notes": {
+                "notes": null
+              }
+            },
+            "custom_preprocessor": "sq_im_84",
+            "dim": 84,
+            "free_log_std": false,
+            "grayscale": true
+          }
+        }
+      ],
+      "car2": [
+        "<class 'ray.rllib.agents.ppo.ppo_policy_graph.PPOPolicyGraph'>",
+        "Box(84, 84, 3)",
+        "Discrete(9)",
+        {
+          "env_config": {
+            "actors": {
+              "car1": {
+                "auto_control": false,
+                "camera_type": "rgb",
+                "collision_sensor": "on",
+                "convert_images_to_video": false,
+                "early_terminate_on_collision": true,
+                "enable_planner": true,
+                "lane_sensor": "on",
+                "log_images": false,
+                "log_measurements": false,
+                "manual_control": false,
+                "render": true,
+                "reward_function": "corl2017",
+                "scenarios": "SSUI3C_TOWN3_CAR1",
+                "send_measurements": false,
+                "type": "vehicle_4W",
+                "use_depth_camera": false,
+                "x_res": 84,
+                "y_res": 84
+              },
+              "car2": {
+                "auto_control": false,
+                "camera_type": "rgb",
+                "collision_sensor": "on",
+                "convert_images_to_video": false,
+                "early_terminate_on_collision": true,
+                "enable_planner": true,
+                "lane_sensor": "on",
+                "log_images": false,
+                "log_measurements": false,
+                "manual_control": false,
+                "render": true,
+                "reward_function": "corl2017",
+                "scenarios": "SSUI3C_TOWN3_CAR2",
+                "send_measurements": false,
+                "type": "vehicle_4W",
+                "use_depth_camera": false,
+                "x_res": 84,
+                "y_res": 84
+              },
+              "car3": {
+                "auto_control": false,
+                "camera_type": "rgb",
+                "collision_sensor": "on",
+                "convert_images_to_video": false,
+                "early_terminate_on_collision": true,
+                "enable_planner": true,
+                "lane_sensor": "on",
+                "log_images": false,
+                "log_measurements": false,
+                "manual_control": false,
+                "render": true,
+                "reward_function": "corl2017",
+                "scenarios": "SSUI3C_TOWN3_CAR3",
+                "send_measurements": false,
+                "type": "vehicle_4W",
+                "use_depth_camera": false,
+                "x_res": 84,
+                "y_res": 84
+              }
+            },
+            "env": {
+              "discrete_actions": true,
+              "enable_planner": true,
+              "fixed_delta_seconds": 0.05,
+              "framestack": 1,
+              "render": true,
+              "render_x_res": 800,
+              "render_y_res": 600,
+              "send_measurements": false,
+              "server_map": "/Game/Carla/Maps/Town03",
+              "spectator_loc": [
+                140,
+                68,
+                9
+              ],
+              "squash_action_logits": false,
+              "sync_server": true,
+              "use_depth_camera": false,
+              "verbose": false,
+              "x_res": 84,
+              "y_res": 84
+            },
+            "scenarios": {
+              "actors": {
+                "car1": {
+                  "end": [
+                    144,
+                    59,
+                    0
+                  ],
+                  "start": [
+                    170.5,
+                    80,
+                    0.4
+                  ]
+                },
+                "car2": {
+                  "end": [
+                    167,
+                    75.7,
+                    0.13
+                  ],
+                  "start": [
+                    188,
+                    59,
+                    0.4
+                  ]
+                },
+                "car3": {
+                  "end": [
+                    191.2,
+                    62.7,
+                    0
+                  ],
+                  "start": [
+                    147.6,
+                    62.6,
+                    0.4
+                  ]
+                }
+              },
+              "map": "Town03",
+              "max_steps": 500,
+              "weather_distribution": [
+                0
+              ]
+            }
+          },
+          "model": {
+            "custom_model": "mnih15_shared_weights",
+            "custom_options": {
+              "notes": {
+                "notes": null
+              }
+            },
+            "custom_preprocessor": "sq_im_84",
+            "dim": 84,
+            "free_log_std": false,
+            "grayscale": true
+          }
+        }
+      ],
+      "car3": [
+        "<class 'ray.rllib.agents.ppo.ppo_policy_graph.PPOPolicyGraph'>",
+        "Box(84, 84, 3)",
+        "Discrete(9)",
+        {
+          "env_config": {
+            "actors": {
+              "car1": {
+                "auto_control": false,
+                "camera_type": "rgb",
+                "collision_sensor": "on",
+                "convert_images_to_video": false,
+                "early_terminate_on_collision": true,
+                "enable_planner": true,
+                "lane_sensor": "on",
+                "log_images": false,
+                "log_measurements": false,
+                "manual_control": false,
+                "render": true,
+                "reward_function": "corl2017",
+                "scenarios": "SSUI3C_TOWN3_CAR1",
+                "send_measurements": false,
+                "type": "vehicle_4W",
+                "use_depth_camera": false,
+                "x_res": 84,
+                "y_res": 84
+              },
+              "car2": {
+                "auto_control": false,
+                "camera_type": "rgb",
+                "collision_sensor": "on",
+                "convert_images_to_video": false,
+                "early_terminate_on_collision": true,
+                "enable_planner": true,
+                "lane_sensor": "on",
+                "log_images": false,
+                "log_measurements": false,
+                "manual_control": false,
+                "render": true,
+                "reward_function": "corl2017",
+                "scenarios": "SSUI3C_TOWN3_CAR2",
+                "send_measurements": false,
+                "type": "vehicle_4W",
+                "use_depth_camera": false,
+                "x_res": 84,
+                "y_res": 84
+              },
+              "car3": {
+                "auto_control": false,
+                "camera_type": "rgb",
+                "collision_sensor": "on",
+                "convert_images_to_video": false,
+                "early_terminate_on_collision": true,
+                "enable_planner": true,
+                "lane_sensor": "on",
+                "log_images": false,
+                "log_measurements": false,
+                "manual_control": false,
+                "render": true,
+                "reward_function": "corl2017",
+                "scenarios": "SSUI3C_TOWN3_CAR3",
+                "send_measurements": false,
+                "type": "vehicle_4W",
+                "use_depth_camera": false,
+                "x_res": 84,
+                "y_res": 84
+              }
+            },
+            "env": {
+              "discrete_actions": true,
+              "enable_planner": true,
+              "fixed_delta_seconds": 0.05,
+              "framestack": 1,
+              "render": true,
+              "render_x_res": 800,
+              "render_y_res": 600,
+              "send_measurements": false,
+              "server_map": "/Game/Carla/Maps/Town03",
+              "spectator_loc": [
+                140,
+                68,
+                9
+              ],
+              "squash_action_logits": false,
+              "sync_server": true,
+              "use_depth_camera": false,
+              "verbose": false,
+              "x_res": 84,
+              "y_res": 84
+            },
+            "scenarios": {
+              "actors": {
+                "car1": {
+                  "end": [
+                    144,
+                    59,
+                    0
+                  ],
+                  "start": [
+                    170.5,
+                    80,
+                    0.4
+                  ]
+                },
+                "car2": {
+                  "end": [
+                    167,
+                    75.7,
+                    0.13
+                  ],
+                  "start": [
+                    188,
+                    59,
+                    0.4
+                  ]
+                },
+                "car3": {
+                  "end": [
+                    191.2,
+                    62.7,
+                    0
+                  ],
+                  "start": [
+                    147.6,
+                    62.6,
+                    0.4
+                  ]
+                }
+              },
+              "map": "Town03",
+              "max_steps": 500,
+              "weather_distribution": [
+                0
+              ]
+            }
+          },
+          "model": {
+            "custom_model": "mnih15_shared_weights",
+            "custom_options": {
+              "notes": {
+                "notes": null
+              }
+            },
+            "custom_preprocessor": "sq_im_84",
+            "dim": 84,
+            "free_log_std": false,
+            "grayscale": true
+          }
+        }
+      ]
+    },
+    "policy_mapping_fn": "<ray.tune.suggest.variant_generator.function object at 0x7f59500804a8>"
+  },
+  "num_envs_per_worker": 1,
+  "num_sgd_iter": 10,
+  "num_workers": 1,
+  "sample_batch_size": 50,
+  "train_batch_size": 500
+}
